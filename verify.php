@@ -6,3 +6,5 @@ assert(is_file('build/404.html'));
 assert(is_file('build/sitemap.xml'));
 assert(is_dir('build/media'));
 assert(is_file('build/media/app.css'));
+
+assert(false); // Test it fails build
