@@ -12,13 +12,13 @@ jobs:
       name: "Integration test for ${{ github.event.client_payload.reference }}"
       url: ${{ github.event.client_payload.url }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: hydephp/action@master
         with:
           debug: true
           upload-artifact: true
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: build
           path: build
